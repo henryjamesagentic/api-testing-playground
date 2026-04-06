@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.monetization {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sponsor-btn, .coffee-btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s;
+}
+
+.sponsor-btn {
+  background: #ea4aaa;
+  color: white;
+}
+
+.coffee-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.sponsor-btn:hover, .coffee-btn:hover {
+  transform: translateY(-2px);
+}
+
+main {
+  padding: 30px;
+}
+
+.request-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.method-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.method-selector select {
+  padding: 12px;
+  border: 2px solid #4CAF50;
+  border-radius: 6px;
+  font-weight: bold;
+  background: white;
+}
+
+.method-selector input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.send-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-btn:hover {
+  background: #45a049;
+}
+
+.tabs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #e9ecef;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab.active {
+  background: white;
+  border-bottom: 3px solid #4CAF50;
+}
+
+.tab-content {
+  display: none;
+  background: white;
+  border-radius: 0 6px 6px 6px;
+  padding: 15px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.response-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.response-section h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.response-info {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+#responseOutput {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 20px;
+  border-radius: 6px;
+  overflow-x: auto;
+  min-height: 200px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.affiliate-section {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.affiliate-section h3 {
+  color: #856404;
+  margin-bottom: 10px;
+}
+
+.affiliate-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.affiliate-links a {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.affiliate-links a:hover {
+  background: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .method-selector {
+    flex-direction: column;
+  }
+  
+  .monetization {
+    flex-direction: column;
+    align-items: center;
+  }
+}

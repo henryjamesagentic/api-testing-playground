@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Testing Playground - Free Online API Tester</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-code"></i> API Testing Playground</h1>
+      <p class="subtitle">Free online tool to test REST APIs instantly. No signup required.</p>
+      <div class="monetization">
+        <a href="https://github.com/sponsors" class="sponsor-btn" target="_blank">
+          <i class="fas fa-heart"></i> Sponsor on GitHub
+        </a>
+        <a href="https://buymeacoffee.com" class="coffee-btn" target="_blank">
+          <i class="fas fa-coffee"></i> Buy Me a Coffee
+        </a>
+      </div>
+    </header>
+    
+    <main>
+      <div class="request-section">
+        <div class="method-selector">
+          <select id="method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+            <option value="PATCH">PATCH</option>
+          </select>
+          <input type="text" id="url" placeholder="https://jsonplaceholder.typicode.com/posts" value="https://jsonplaceholder.typicode.com/posts">
+          <button id="sendRequest" class="send-btn">
+            <i class="fas fa-paper-plane"></i> Send Request
+          </button>
+        </div>
+        
+        <div class="tabs">
+          <button class="tab active" data-tab="params">Params</button>
+          <button class="tab" data-tab="headers">Headers</button>
+          <button class="tab" data-tab="body">Body</button>
+          <button class="tab" data-tab="auth">Auth</button>
+        </div>
+        
+        <div class="tab-content active" id="params-content">
+          <textarea id="params" placeholder='{"key": "value"}' rows="4">{"userId": 1}</textarea>
+        </div>
+        
+        <div class="tab-content" id="headers-content">
+          <textarea id="headers" placeholder='{"Content-Type": "application/json"}' rows="4">{"Content-Type": "application/json"}</textarea>
+        </div>
+        
+        <div class="tab-content" id="body-content">
+          <textarea id="body" placeholder='{"title": "test", "body": "content"}' rows="6">{"title": "API Test", "body": "Testing the playground", "userId": 1}</textarea>
+        </div>
+        
+        <div class="tab-content" id="auth-content">
+          <textarea id="auth" placeholder='Bearer token or Basic auth' rows="3">Bearer YOUR_TOKEN_HERE</textarea>
+        </div>
+      </div>
+      
+      <div class="response-section">
+        <h3><i class="fas fa-reply"></i> Response</h3>
+        <div class="response-info">
+          Status: <span id="statusCode">--</span> | 
+          Time: <span id="responseTime">-- ms</span> | 
+          Size: <span id="responseSize">-- bytes</span>
+        </div>
+        <pre id="responseOutput">{
+  "message": "Send a request to see response here"
+}</pre>
+      </div>
+      
+      <div class="affiliate-section">
+        <h3><i class="fas fa-rocket"></i> Need a Production API?</h3>
+        <p>Check out these services (affiliate links):</p>
+        <div class="affiliate-links">
+          <a href="https://rapidapi.com" target="_blank">RapidAPI - 1000+ APIs</a>
+          <a href="https://postman.com" target="_blank">Postman - API Platform</a>
+          <a href="https://mockapi.io" target="_blank">MockAPI - Fake APIs</a>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>API Testing Playground &copy; 2024 - Free and Open Source</p>
+      <p>Love this tool? <a href="https://github.com/sponsors" target="_blank">Sponsor development</a> or <a href="https://buymeacoffee.com" target="_blank">buy me a coffee</a>.</p>
+    </footer>
+  </div>
+  
+  <script src="api-tester.js"></script>
+</body>
+</html>
