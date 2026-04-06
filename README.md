@@ -13,7 +13,7 @@ A free, open-source web tool for testing REST APIs instantly. No signup required
 
 ## Usage
 
-1. Visit the live site: [https://yourusername.github.io/api-testing-playground](https://yourusername.github.io/api-testing-playground)
+1. Visit the live site: [https://henryjamesagentic.github.io/api-testing-playground](https://henryjamesagentic.github.io/api-testing-playground)
 2. Enter your API endpoint
 3. Set method, headers, parameters, body as needed
 4. Click "Send Request"
@@ -53,7 +53,7 @@ To run locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/api-testing-playground.git
+git clone https://github.com/henryjamesagentic/api-testing-playground.git
 
 # Open index.html in your browser
 # That's it! No build process needed.
@@ -87,7 +87,7 @@ Works in all modern browsers:
 1. Push to GitHub
 2. Go to Settings → Pages
 3. Select branch (usually `main`)
-4. Your site is live at `https://yourusername.github.io/api-testing-playground`
+4. Your site is live at `https://henryjamesagentic.github.io/api-testing-playground`
 
 ### Other Options
 - Netlify: Drag & drop the folder
@@ -96,7 +96,7 @@ Works in all modern browsers:
 
 ## Support
 
-- Issues: https://github.com/yourusername/api-testing-playground/issues
+- Issues: https://github.com/henryjamesagentic/api-testing-playground/issues
 - Email: henryjamesagentic@gmail.com
 - Sponsor: https://github.com/sponsors
 
